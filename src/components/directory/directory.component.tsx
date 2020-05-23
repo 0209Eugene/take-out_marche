@@ -26,14 +26,14 @@ const Directory :React.FC = () => {
     {
       title: 'Pork Curry',
       subTitle: 'sample',
-      imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sukiya.jp%2Fmenu%2Fout%2Fcurry%2F301300%2F&psig=AOvVaw3ztpACYTd3nijxWvXiv2-F&ust=1589212064615000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPicgL3SqekCFQAAAAAdAAAAABAD',
+      imageUrl: 'https://cdn.takeout.epark.jp/images/product/3281/103363/Q8rcJJneKqOMvw53OcKNioPZPsyl40tBT2GK1JnA.jpeg',
       id: 2,
       linkUrl: 'pork-curry'
     },
     {
       title: 'Beef Curry',
       subTitle: 'sample',
-      imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Ftakeout.epark.jp%2Fsaitama%2F372%2Fcafe%2F6319%2Fmenu%2F105040&psig=AOvVaw0nxdDz44pvNMzKdr1xSjPI&ust=1589212020010000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCND23ajSqekCFQAAAAAdAAAAABAD',
+      imageUrl: 'https://img.hanako.tokyo/2020/05/11201603/cbf0500faf4689d810091e6d6fdd876b-768x512.jpg',
       id: 3,
       linkUrl: 'beef-curry'
     },
@@ -48,7 +48,7 @@ const Directory :React.FC = () => {
     {
       title: 'SandWitch',
       subTitle: 'sample',
-      imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Frtrp.jp%2Farticles%2F120092%2F&psig=AOvVaw2gMYHTRPOoXRfGQ-fWpZd5&ust=1589212161408000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCICEuOnSqekCFQAAAAAdAAAAABAD',
+      imageUrl: 'https://willstage.jp/member/wp/wp-content/uploads/780e929dd33f31f91688b1585d15fee7.gif',
       id: 5,
       size: 'large',
       linkUrl: 'sandwitch'
