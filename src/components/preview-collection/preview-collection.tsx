@@ -4,14 +4,13 @@ import './preview-collection.style.scss';
 
 interface CollectionPreviewProps {
   title: string,
-  items: [
+  items: 
     {
       id: number,
       name: string,
       imageUrl: string,
       price: number
-    }
-  ]
+    }[]
 }
 
 
