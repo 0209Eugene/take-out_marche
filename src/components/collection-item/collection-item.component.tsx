@@ -4,7 +4,7 @@ import './collection-item.style.scss';
 
 
 interface CollectionItemProps {
-  id?: number,
+  id?: number, // TODO: To Fix because id must not to be undefined
   name: string,
   price: number,
   imageUrl: string
