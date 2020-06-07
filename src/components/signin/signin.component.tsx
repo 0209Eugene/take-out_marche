@@ -7,6 +7,8 @@ import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
 import CardHeader from '@material-ui/core/CardHeader';
 
+import { signInWithGoogle } from '../../firebase/firebase.utils';
+
 import './signin-style.scss';
 import { keys } from '@material-ui/core/styles/createBreakpoints';
 
@@ -112,11 +114,20 @@ const Login = () => {
               Login
             </Button>
           </CardActions>
+          <CardActions>
+            <Button
+              variant="contained"
+              size="large"
+              color="primary"
+              className={classes.loginBtn}
+              onClick={signInWithGoogle}
+            >
+              Sign in with Google
+            </Button>
+          </CardActions>
         </Card>
-
       </form>
     </React.Fragment>
-
   )
 }
 
