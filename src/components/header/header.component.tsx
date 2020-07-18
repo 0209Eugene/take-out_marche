@@ -1,11 +1,15 @@
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
+import { auth } from '../../firebase/firebase.utils';
 
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import './header.style.scss';
 
+interface HeaderProps {
+  currentUser: any;
+}
 
-const Header: React.FC = () => {
+const Header: React.FC<HeaderProps> = ({ currentUser }) => {
   return (
     <div className='header'>
       <Link className='logo-container' to='/'>
@@ -18,6 +22,14 @@ const Header: React.FC = () => {
         <Link className='option' to='/contact'>
           CONTACT
         </Link>
+        {
+          currentUser ?
+            <div className='option' onClick={() => auth.signOut()}> {currentUser.displayName} | SIGN OUT</div>
+            :
+            <Link className='option' to='/signin'>
+              SIGN IN
+            </Link>
+        }
       </div>
     </div>
   )
